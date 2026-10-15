@@ -1,0 +1,33 @@
+<div class="app">
+  <header class="topbar">
+    <span class="app-name">日记</span>
+    <button class="calendar-btn" id="calendarBtn" aria-label="打开日历">▦</button>
+  </header>
+
+  <main class="diary">
+    <div class="date" id="todayDate"></div>
+    <textarea
+      id="diaryText"
+      placeholder="写下今天的故事……"
+      spellcheck="false"
+    ></textarea>
+    <div id="saveStatus" class="save-status">自动保存</div>
+  </main>
+</div>
+
+<div id="calendarPanel" class="calendar-panel" hidden>
+  <div class="calendar-header">
+    <button id="prevMonth" aria-label="上个月">‹</button>
+    <span id="monthTitle"></span>
+    <button id="nextMonth" aria-label="下个月">›</button>
+    <button id="closeCalendar" aria-label="关闭日历">✕</button>
+  </div>
+
+  <div class="calendar-weekdays">
+    <span>日</span><span>一</span><span>二</span>
+    <span>三</span><span>四</span><span>五</span><span>六</span>
+  </div>
+
+  <div id="calendarDays" class="calendar-days"></div>
+  <p class="calendar-tip">有小圆点的日期，表示保存过日记。</p>
+</div>
